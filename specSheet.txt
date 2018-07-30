@@ -1,0 +1,54 @@
+// Data for Krabby Patties
+
+// Krabby Patty
+{
+  'id' : id,
+  'name' : name,
+  'meal' : boolean,
+  'pretty' : boolean,
+  'price' : price
+}
+{
+  'id' : '1',
+  'name' : 'Krabby Patty Deluxe',
+  'meal' : 'true',
+  'pretty' : 'false',
+  'price' : '15'
+}
+{
+  'id' : '2',
+  'name' : 'Purple Pretty Patty',
+  'meal' : 'true',
+  'pretty' : 'true',
+  'price' : '10'
+}
+
+
+//Specification
+{
+  'GET /krabby-patties' : {
+    'description' : 'returns all krabby-patties,
+    'response' : '200 application/json',
+    'sandwhich' : [{},{},{}]
+  },
+  'GET /krabby-patties/:id' : {
+    'description' : 'returns one krabby-patty represented by the id',
+    'response' : '200 application/json',
+    'sandwhich' : {}
+  },
+  'POST /krabby-patties' : {
+    'description' : 'create and return a new krabby-patty using the posted sandwhich as the krabby-patty',
+    'response' : '201 application/json',
+    'sandwhich' : {}
+  },
+  'PUT /krabby-patties/:id' : {
+    'description' : 'updates and returns the matching krabby-patty with the posted update sandwhich',
+    'response' : '200 application/json',
+    'sandwhich' : {}
+  }
+  'DELETE /krabby-patties/:id' : {
+    'description' : 'delete and return the matching krabby-patty',
+    'response' : '200 application/json',
+    'sandwhich' : {}
+  }
+}
